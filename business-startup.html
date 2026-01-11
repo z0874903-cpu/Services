@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Startup Package | ServicePro</title>
+    <title data-i18n="business_startup">Business Startup Package | ServicePro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Service<span>Pro</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -26,28 +34,28 @@
 
     <section class="service-detail-hero">
         <div class="container">
-            <span class="service-badge">Complete Package</span>
-            <h1>Business Startup Package</h1>
-            <p class="service-hero-subtitle">End-to-end support for launching and growing your business successfully.</p>
+            <span class="service-badge" data-i18n="complete_package">Complete Package</span>
+            <h1 data-i18n="business_startup">Business Startup Package</h1>
+            <p class="service-hero-subtitle" data-i18n="startup_subtitle">End-to-end support for launching and growing your business successfully.</p>
             
             <div class="service-stats">
                 <div class="stat-item">
                     <span class="stat-number">100+</span>
-                    <span class="stat-label">Startups</span>
+                    <span class="stat-label" data-i18n="stat_startups">Startups</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">60</span>
-                    <span class="stat-label">Days to Launch</span>
+                    <span class="stat-label" data-i18n="stat_days_to_launch">Days to Launch</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">95%</span>
-                    <span class="stat-label">Success Rate</span>
+                    <span class="stat-label" data-i18n="stat_success_rate">Success Rate</span>
                 </div>
             </div>
 
             <div class="service-hero-cta">
-                <a href="#package" class="btn btn-filled">View Package</a>
-                <a href="index.html#contact" class="btn">Free Consultation</a>
+                <a href="#package" class="btn btn-filled" data-i18n="view_package">View Package</a>
+                <a href="index.html#contact" class="btn" data-i18n="free_consultation">Free Consultation</a>
             </div>
         </div>
     </section>
@@ -56,48 +64,48 @@
         <div class="container">
             <div id="package" class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Package</span>
-                    <h2>Complete Startup Package</h2>
-                    <p class="content-description">Everything you need to launch your business successfully in 60 days.</p>
+                    <span class="section-label" data-i18n="package">Package</span>
+                    <h2 data-i18n="complete_startup_package">Complete Startup Package</h2>
+                    <p class="content-description" data-i18n="package_desc">Everything you need to launch your business successfully in 60 days.</p>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Phase 1: Planning & Legal</h3>
-                        <p>Weeks 1-2: Business foundation and legal setup.</p>
+                        <h3 data-i18n="phase_planning_legal">Phase 1: Planning & Legal</h3>
+                        <p data-i18n="weeks_1_2">Weeks 1-2: Business foundation and legal setup.</p>
                         <ul class="offering-features">
-                            <li>Business Plan Development</li>
-                            <li>Market Research & Analysis</li>
-                            <li>Company Registration (LLC/Corp)</li>
-                            <li>Tax ID (EIN) Application</li>
-                            <li>Business License Assistance</li>
-                            <li>Legal Document Templates</li>
+                            <li data-i18n="business_plan_development">Business Plan Development</li>
+                            <li data-i18n="market_research_analysis">Market Research & Analysis</li>
+                            <li data-i18n="company_registration_llc_corp">Company Registration (LLC/Corp)</li>
+                            <li data-i18n="tax_id_ein_application">Tax ID (EIN) Application</li>
+                            <li data-i18n="business_license_assistance">Business License Assistance</li>
+                            <li data-i18n="legal_document_templates">Legal Document Templates</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Phase 2: Branding & Identity</h3>
-                        <p>Weeks 3-4: Professional branding and visual identity.</p>
+                        <h3 data-i18n="phase_branding_identity">Phase 2: Branding & Identity</h3>
+                        <p data-i18n="weeks_3_4">Weeks 3-4: Professional branding and visual identity.</p>
                         <ul class="offering-features">
-                            <li>Professional Logo Design</li>
-                            <li>Complete Brand Guidelines</li>
-                            <li>Business Stationery Design</li>
-                            <li>Marketing Collateral Design</li>
-                            <li>Social Media Branding Kit</li>
-                            <li>Email Signature Design</li>
+                            <li data-i18n="professional_logo_design">Professional Logo Design</li>
+                            <li data-i18n="complete_brand_guidelines">Complete Brand Guidelines</li>
+                            <li data-i18n="business_stationery_design">Business Stationery Design</li>
+                            <li data-i18n="marketing_collateral_design">Marketing Collateral Design</li>
+                            <li data-i18n="social_media_branding_kit">Social Media Branding Kit</li>
+                            <li data-i18n="email_signature_design">Email Signature Design</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Phase 3: Digital Presence</h3>
-                        <p>Weeks 5-6: Online presence and digital setup.</p>
+                        <h3 data-i18n="phase_digital_presence">Phase 3: Digital Presence</h3>
+                        <p data-i18n="weeks_5_6">Weeks 5-6: Online presence and digital setup.</p>
                         <ul class="offering-features">
-                            <li>Professional Website (5 pages)</li>
-                            <li>Domain Registration (1 year)</li>
-                            <li>Business Email Setup</li>
-                            <li>SEO Basic Setup</li>
-                            <li>Google My Business Setup</li>
-                            <li>Social Media Setup (3 platforms)</li>
+                            <li data-i18n="professional_website_5_pages">Professional Website (5 pages)</li>
+                            <li data-i18n="domain_registration_1_year">Domain Registration (1 year)</li>
+                            <li data-i18n="business_email_setup">Business Email Setup</li>
+                            <li data-i18n="seo_basic_setup">SEO Basic Setup</li>
+                            <li data-i18n="google_my_business_setup">Google My Business Setup</li>
+                            <li data-i18n="social_media_setup_3_platforms">Social Media Setup (3 platforms)</li>
                         </ul>
                     </div>
                 </div>
@@ -105,48 +113,48 @@
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Package Details</span>
-                    <h2>Complete Package: $3,200</h2>
-                    <p class="content-description">Save $1,500+ compared to individual services.</p>
+                    <span class="section-label" data-i18n="package_details">Package Details</span>
+                    <h2 data-i18n="complete_package_price">Complete Package: $3,200</h2>
+                    <p class="content-description" data-i18n="save_compared">Save $1,500+ compared to individual services.</p>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Phase 4: Marketing & Operations</h3>
-                        <p>Weeks 7-8: Marketing strategy and operational setup.</p>
+                        <h3 data-i18n="phase_marketing_operations">Phase 4: Marketing & Operations</h3>
+                        <p data-i18n="weeks_7_8">Weeks 7-8: Marketing strategy and operational setup.</p>
                         <ul class="offering-features">
-                            <li>Initial Marketing Strategy</li>
-                            <li>Email Marketing Setup</li>
-                            <li>CRM System Setup</li>
-                            <li>Accounting Software Setup</li>
-                            <li>Operations Manual Template</li>
-                            <li>3-Month Mentorship Program</li>
+                            <li data-i18n="initial_marketing_strategy">Initial Marketing Strategy</li>
+                            <li data-i18n="email_marketing_setup">Email Marketing Setup</li>
+                            <li data-i18n="crm_system_setup">CRM System Setup</li>
+                            <li data-i18n="accounting_software_setup">Accounting Software Setup</li>
+                            <li data-i18n="operations_manual_template">Operations Manual Template</li>
+                            <li data-i18n="3_month_mentorship_program">3-Month Mentorship Program</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Additional Benefits</h3>
-                        <p>Extra value included in the complete package.</p>
+                        <h3 data-i18n="additional_benefits">Additional Benefits</h3>
+                        <p data-i18n="extra_value_included">Extra value included in the complete package.</p>
                         <ul class="offering-features">
-                            <li>Dedicated Project Manager</li>
-                            <li>Weekly Progress Updates</li>
-                            <li>Priority Support Access</li>
-                            <li>All Source Files & Assets</li>
-                            <li>Training & Documentation</li>
-                            <li>3-Month Post-Launch Support</li>
+                            <li data-i18n="dedicated_project_manager">Dedicated Project Manager</li>
+                            <li data-i18n="weekly_progress_updates">Weekly Progress Updates</li>
+                            <li data-i18n="priority_support_access">Priority Support Access</li>
+                            <li data-i18n="all_source_files_assets">All Source Files & Assets</li>
+                            <li data-i18n="training_documentation">Training & Documentation</li>
+                            <li data-i18n="3_month_post_launch_support">3-Month Post-Launch Support</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Optional Add-ons</h3>
-                        <p>Additional services to enhance your startup package.</p>
+                        <h3 data-i18n="optional_addons">Optional Add-ons</h3>
+                        <p data-i18n="additional_services_enhance">Additional services to enhance your startup package.</p>
                         <ul class="offering-features">
-                            <li>E-commerce Setup: +$1,000</li>
-                            <li>Funding Package: +$1,500</li>
-                            <li>Premium Branding: +$800</li>
-                            <li>Extended Mentorship: +$600</li>
-                            <li>Advanced Analytics: +$400</li>
-                            <li>Legal Consultation: +$500</li>
+                            <li data-i18n="ecommerce_setup_1000">E-commerce Setup: +$1,000</li>
+                            <li data-i18n="funding_package_1500">Funding Package: +$1,500</li>
+                            <li data-i18n="premium_branding_800">Premium Branding: +$800</li>
+                            <li data-i18n="extended_mentorship_600">Extended Mentorship: +$600</li>
+                            <li data-i18n="advanced_analytics_400">Advanced Analytics: +$400</li>
+                            <li data-i18n="legal_consultation_500">Legal Consultation: +$500</li>
                         </ul>
                     </div>
                 </div>
@@ -154,38 +162,38 @@
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Comparison</span>
-                    <h2>Package vs. Individual Services</h2>
+                    <span class="section-label" data-i18n="comparison">Comparison</span>
+                    <h2 data-i18n="package_vs_individual">Package vs. Individual Services</h2>
                 </div>
 
                 <div class="tech-stack">
                     <div class="tech-category">
-                        <h3>Service</h3>
+                        <h3 data-i18n="service">Service</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">Business Plan Development: $500</span>
-                            <span class="tech-tag">Company Registration: $400</span>
-                            <span class="tech-tag">Logo & Branding: $1,300</span>
-                            <span class="tech-tag">Website Development: $2,500</span>
+                            <span class="tech-tag" data-i18n="business_plan_development_price">Business Plan Development: $500</span>
+                            <span class="tech-tag" data-i18n="company_registration_price">Company Registration: $400</span>
+                            <span class="tech-tag" data-i18n="logo_branding_price">Logo & Branding: $1,300</span>
+                            <span class="tech-tag" data-i18n="website_development_price">Website Development: $2,500</span>
                         </div>
                     </div>
 
                     <div class="tech-category">
-                        <h3>Package Savings</h3>
+                        <h3 data-i18n="package_savings">Package Savings</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">Total Individual: $4,700</span>
-                            <span class="tech-tag">Package Price: $3,200</span>
-                            <span class="tech-tag">You Save: $1,500</span>
-                            <span class="tech-tag">Savings: 32%</span>
+                            <span class="tech-tag" data-i18n="total_individual_price">Total Individual: $4,700</span>
+                            <span class="tech-tag" data-i18n="package_price">Package Price: $3,200</span>
+                            <span class="tech-tag" data-i18n="you_save_amount">You Save: $1,500</span>
+                            <span class="tech-tag" data-i18n="savings_percentage">Savings: 32%</span>
                         </div>
                     </div>
 
                     <div class="tech-category">
-                        <h3>Timeline</h3>
+                        <h3 data-i18n="timeline">Timeline</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">60-Day Launch Timeline</span>
-                            <span class="tech-tag">Dedicated Project Manager</span>
-                            <span class="tech-tag">Weekly Progress Updates</span>
-                            <span class="tech-tag">Post-Launch Support Included</span>
+                            <span class="tech-tag" data-i18n="day_launch_timeline">60-Day Launch Timeline</span>
+                            <span class="tech-tag" data-i18n="dedicated_project_manager">Dedicated Project Manager</span>
+                            <span class="tech-tag" data-i18n="weekly_progress_updates">Weekly Progress Updates</span>
+                            <span class="tech-tag" data-i18n="post_launch_support_included">Post-Launch Support Included</span>
                         </div>
                     </div>
                 </div>
@@ -193,52 +201,52 @@
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Success Stories</span>
-                    <h2>Startups We've Helped</h2>
+                    <span class="section-label" data-i18n="success_stories">Success Stories</span>
+                    <h2 data-i18n="startups_helped">Startups We've Helped</h2>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>FreshBites Meal Prep</h3>
-                        <p>Healthy meal delivery service launched in 2023.</p>
+                        <h3 data-i18n="freshbites_meal_prep">FreshBites Meal Prep</h3>
+                        <p data-i18n="healthy_meal_delivery">Healthy meal delivery service launched in 2023.</p>
                         <ul class="offering-features">
-                            <li>$50K revenue in first 6 months</li>
-                            <li>Featured in local publications</li>
-                            <li>100+ recurring customers</li>
-                            <li>Expanding to second location</li>
+                            <li data-i18n="revenue_first_6_months">$50K revenue in first 6 months</li>
+                            <li data-i18n="featured_local_publications">Featured in local publications</li>
+                            <li data-i18n="recurring_customers_plus">100+ recurring customers</li>
+                            <li data-i18n="expanding_second_location">Expanding to second location</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>CodeCraft Academy</h3>
-                        <p>Online coding bootcamp for beginners.</p>
+                        <h3 data-i18n="codecraft_academy">CodeCraft Academy</h3>
+                        <p data-i18n="online_coding_bootcamp">Online coding bootcamp for beginners.</p>
                         <ul class="offering-features">
-                            <li>200+ students enrolled</li>
-                            <li>4.9/5 average rating</li>
-                            <li>Partnerships with tech companies</li>
-                            <li>Expanding course offerings</li>
+                            <li data-i18n="students_enrolled_plus">200+ students enrolled</li>
+                            <li data-i18n="average_rating_4_9">4.9/5 average rating</li>
+                            <li data-i18n="partnerships_tech_companies">Partnerships with tech companies</li>
+                            <li data-i18n="expanding_course_offerings">Expanding course offerings</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>EcoClean Products</h3>
-                        <p>Sustainable cleaning product line.</p>
+                        <h3 data-i18n="ecoclean_products">EcoClean Products</h3>
+                        <p data-i18n="sustainable_cleaning_products">Sustainable cleaning product line.</p>
                         <ul class="offering-features">
-                            <li>Featured in 5 publications</li>
-                            <li>National retail distribution</li>
-                            <li>Multiple product line extensions</li>
-                            <li>Environmental awards recipient</li>
+                            <li data-i18n="featured_5_publications">Featured in 5 publications</li>
+                            <li data-i18n="national_retail_distribution">National retail distribution</li>
+                            <li data-i18n="multiple_product_line_extensions">Multiple product line extensions</li>
+                            <li data-i18n="environmental_awards_recipient">Environmental awards recipient</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="service-cta">
-                <h2>Launch Your Business</h2>
-                <p>Book your free startup consultation and get a customized roadmap.</p>
+                <h2 data-i18n="launch_business">Launch Your Business</h2>
+                <p data-i18n="free_startup_consultation">Book your free startup consultation and get a customized roadmap.</p>
                 <div class="cta-buttons">
-                    <a href="index.html#contact" class="btn btn-filled">Book Free Consultation</a>
-                    <a href="tel:+11234567890" class="btn">Call Startup Advisor</a>
+                    <a href="index.html#contact" class="btn btn-filled" data-i18n="book_free_consultation">Book Free Consultation</a>
+                    <a href="tel:+11234567890" class="btn" data-i18n="call_startup_advisor">Call Startup Advisor</a>
                 </div>
             </div>
         </div>
@@ -247,7 +255,7 @@
     <div class="back-navigation">
         <div class="container">
             <a href="index.html#services" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="back_to_services">Back to All Services</span>
             </a>
         </div>
     </div>
@@ -257,7 +265,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>ServicePro</h3>
-                    <p>Professional services for modern businesses. Delivering excellence since 2015.</p>
+                    <p data-i18n="servicepro_description">Professional services for modern businesses. Delivering excellence since 2015.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -266,35 +274,36 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="services">Services</h4>
                     <ul>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="graphic-design.html">Graphic Design</a></li>
-                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="web.html" data-i18n="web_development">Web Development</a></li>
+                        <li><a href="graphic-design.html" data-i18n="graphic_design">Graphic Design</a></li>
+                        <li><a href="digital-marketing.html" data-i18n="digital_marketing">Digital Marketing</a></li>
+                        <li><a href="app-development.html" data-i18n="app_development">App Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4 data-i18n="quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                        <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>123 Business St.<br>New York, NY 10001<br>United States</p>
-                    <p>startups@servicepro.com<br>+1 (212) 555-1234</p>
+                    <h4 data-i18n="contact_footer">Contact</h4>
+                    <p data-i18n="address">123 Business St.<br>New York, NY 10001<br>United States</p>
+                    <p>startups@servicepro.com<br><span data-i18n="phone_number">+1 (212) 555-1234</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ServicePro. All rights reserved.</p>
+                <p>&copy; <span data-i18n="copyright_year">2026</span> ServicePro. <span data-i18n="all_rights_reserved">All rights reserved</span>.</p>
             </div>
         </div>
     </footer>
 
+    <script src="language-manager.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
