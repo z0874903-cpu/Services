@@ -1182,3 +1182,169 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--gray-light);
 }
+
+
+
+/* RTL Support */
+html[dir="rtl"] body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Arabic font support */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+html[dir="rtl"] body {
+    font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+html[dir="rtl"] .language-switcher {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.lang-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--gray);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 40px;
+    text-align: center;
+}
+
+.lang-btn.active {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+}
+
+.lang-btn:hover:not(.active) {
+    border-color: var(--black);
+    color: var(--black);
+}
+
+/* RTL Specific Adjustments */
+html[dir="rtl"] .logo {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .nav-links {
+    padding-right: 0;
+}
+
+html[dir="rtl"] .menu-toggle {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .hero .container {
+    text-align: right;
+}
+
+html[dir="rtl"] .hero-content p {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+html[dir="rtl"] .info-item i {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+html[dir="rtl"] .pricing-features i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+html[dir="rtl"] .back-link {
+    direction: ltr;
+}
+
+html[dir="rtl"] .back-link i {
+    transform: rotate(180deg);
+}
+
+html[dir="rtl"] .testimonial-content .quote-icon {
+    left: auto;
+    right: 30px;
+}
+
+html[dir="rtl"] .slider-controls {
+    direction: ltr;
+}
+
+/* Responsive RTL */
+@media (max-width: 768px) {
+    html[dir="rtl"] .language-switcher {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    html[dir="rtl"] .nav-links {
+        text-align: right;
+    }
+}
+
+/* Service Detail Pages RTL Support */
+html[dir="rtl"] .service-detail-hero .container {
+    text-align: center;
+}
+
+html[dir="rtl"] .content-description {
+    text-align: center;
+}
+
+html[dir="rtl"] .offering-features li,
+html[dir="rtl"] .service-features li {
+    text-align: right;
+}
+
+/* Form RTL Support */
+html[dir="rtl"] .contact-form input,
+html[dir="rtl"] .contact-form textarea {
+    text-align: right;
+}
+
+html[dir="rtl"] .contact-form input::placeholder,
+html[dir="rtl"] .contact-form textarea::placeholder {
+    text-align: right;
+}
+
+/* Footer RTL Support */
+html[dir="rtl"] .footer-section ul {
+    padding-right: 0;
+}
+
+html[dir="rtl"] .social-links {
+    justify-content: flex-end;
+}
+
+/* Pricing RTL */
+html[dir="rtl"] .pricing-features li {
+    text-align: right;
+}
+
+html[dir="rtl"] .badge,
+html[dir="rtl"] .popular-tag {
+    left: 20px;
+    right: auto;
+}
+
+/* Tech Tags RTL */
+html[dir="rtl"] .tech-tags {
+    justify-content: flex-end;
+}
+
+
+/* Import RTL styles */
+@import url('rtl.css');
