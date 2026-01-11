@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development | ServicePro</title>
+    <title data-i18n="web_development">Web Development | ServicePro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -14,11 +15,18 @@
         <div class="container">
             <a href="index.html" class="logo">Service<span>Pro</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -28,28 +36,28 @@
     <!-- Service Hero -->
     <section class="service-detail-hero">
         <div class="container">
-            <span class="service-badge">Featured Service</span>
-            <h1>Web Development</h1>
-            <p class="service-hero-subtitle">Custom websites and web applications built with modern technologies and best practices.</p>
+            <span class="service-badge" data-i18n="featured_service">Featured Service</span>
+            <h1 data-i18n="web_development">Web Development</h1>
+            <p class="service-hero-subtitle" data-i18n="web_dev_subtitle">Custom websites and web applications built with modern technologies and best practices.</p>
             
             <div class="service-stats">
                 <div class="stat-item">
                     <span class="stat-number">200+</span>
-                    <span class="stat-label">Projects</span>
+                    <span class="stat-label" data-i18n="stat_projects">Projects</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">99%</span>
-                    <span class="stat-label">Satisfaction</span>
+                    <span class="stat-label" data-i18n="stat_satisfaction">Satisfaction</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support</span>
+                    <span class="stat-label" data-i18n="stat_support">Support</span>
                 </div>
             </div>
 
             <div class="service-hero-cta">
-                <a href="#pricing" class="btn btn-filled">View Pricing</a>
-                <a href="index.html#contact" class="btn">Contact Us</a>
+                <a href="#pricing" class="btn btn-filled" data-i18n="view_pricing">View Pricing</a>
+                <a href="index.html#contact" class="btn" data-i18n="contact_us">Contact Us</a>
             </div>
         </div>
     </section>
@@ -60,42 +68,42 @@
             <!-- Overview -->
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Overview</span>
-                    <h2>Comprehensive Web Solutions</h2>
-                    <p class="content-description">We build custom websites and web applications that are fast, secure, and scalable. Our focus is on creating digital experiences that drive business growth.</p>
+                    <span class="section-label" data-i18n="overview">Overview</span>
+                    <h2 data-i18n="comprehensive_web">Comprehensive Web Solutions</h2>
+                    <p class="content-description" data-i18n="overview_desc">We build custom websites and web applications that are fast, secure, and scalable. Our focus is on creating digital experiences that drive business growth.</p>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Custom Websites</h3>
-                        <p>Fully responsive websites built with modern frameworks and best practices.</p>
+                        <h3 data-i18n="custom_websites">Custom Websites</h3>
+                        <p data-i18n="custom_websites_desc">Fully responsive websites built with modern frameworks and best practices.</p>
                         <ul class="offering-features">
-                            <li>Responsive Design</li>
-                            <li>Performance Optimized</li>
-                            <li>SEO Friendly</li>
-                            <li>Content Management</li>
+                            <li data-i18n="responsive_design">Responsive Design</li>
+                            <li data-i18n="performance_optimized">Performance Optimized</li>
+                            <li data-i18n="seo_friendly">SEO Friendly</li>
+                            <li data-i18n="content_management">Content Management</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>E-commerce</h3>
-                        <p>Online stores with secure payment processing and inventory management.</p>
+                        <h3 data-i18n="ecommerce_solutions">E-commerce</h3>
+                        <p data-i18n="ecommerce_desc">Online stores with secure payment processing and inventory management.</p>
                         <ul class="offering-features">
-                            <li>Payment Integration</li>
-                            <li>Product Management</li>
-                            <li>Order Tracking</li>
-                            <li>Security & Compliance</li>
+                            <li data-i18n="payment_integration">Payment Integration</li>
+                            <li data-i18n="product_management">Product Management</li>
+                            <li data-i18n="order_tracking">Order Tracking</li>
+                            <li data-i18n="security_compliance">Security & Compliance</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Web Applications</h3>
-                        <p>Custom web apps with user authentication, databases, and API integration.</p>
+                        <h3 data-i18n="web_applications">Web Applications</h3>
+                        <p data-i18n="web_apps_desc">Custom web apps with user authentication, databases, and API integration.</p>
                         <ul class="offering-features">
-                            <li>User Authentication</li>
-                            <li>Database Design</li>
-                            <li>API Development</li>
-                            <li>Real-time Features</li>
+                            <li data-i18n="user_authentication">User Authentication</li>
+                            <li data-i18n="database_design">Database Design</li>
+                            <li data-i18n="api_development">API Development</li>
+                            <li data-i18n="realtime_features">Real-time Features</li>
                         </ul>
                     </div>
                 </div>
@@ -104,41 +112,41 @@
             <!-- Technology -->
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Technology</span>
-                    <h2>Technology Stack</h2>
+                    <span class="section-label" data-i18n="technology">Technology</span>
+                    <h2 data-i18n="technology_stack">Technology Stack</h2>
                 </div>
 
                 <div class="tech-stack">
                     <div class="tech-category">
-                        <h3>Frontend</h3>
+                        <h3 data-i18n="frontend">Frontend</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag" data-i18n="react">React</span>
+                            <span class="tech-tag" data-i18n="vue_js">Vue.js</span>
+                            <span class="tech-tag" data-i18n="typescript">TypeScript</span>
+                            <span class="tech-tag" data-i18n="next_js">Next.js</span>
+                            <span class="tech-tag" data-i18n="tailwind_css">Tailwind CSS</span>
                         </div>
                     </div>
 
                     <div class="tech-category">
-                        <h3>Backend</h3>
+                        <h3 data-i18n="backend">Backend</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag" data-i18n="node_js">Node.js</span>
+                            <span class="tech-tag" data-i18n="python">Python</span>
+                            <span class="tech-tag" data-i18n="php">PHP</span>
+                            <span class="tech-tag" data-i18n="laravel">Laravel</span>
+                            <span class="tech-tag" data-i18n="postgresql">PostgreSQL</span>
                         </div>
                     </div>
 
                     <div class="tech-category">
-                        <h3>Tools & Platforms</h3>
+                        <h3 data-i18n="tools_platforms">Tools & Platforms</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">Git</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Vercel</span>
-                            <span class="tech-tag">Netlify</span>
+                            <span class="tech-tag" data-i18n="git">Git</span>
+                            <span class="tech-tag" data-i18n="docker">Docker</span>
+                            <span class="tech-tag" data-i18n="aws">AWS</span>
+                            <span class="tech-tag" data-i18n="vercel">Vercel</span>
+                            <span class="tech-tag" data-i18n="netlify">Netlify</span>
                         </div>
                     </div>
                 </div>
@@ -147,70 +155,65 @@
             <!-- Pricing -->
             <div id="pricing" class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Pricing</span>
-                    <h2>Service Packages</h2>
-                    <p class="content-description">Transparent pricing for projects of all sizes. All packages include responsive design and basic SEO.</p>
-                </div>
-
-                <div class="pricing-tabs">
-                    <button class="pricing-tab active">Project-Based</button>
-                    <button class="pricing-tab">Monthly Retainer</button>
+                    <span class="section-label" data-i18n="pricing">Pricing</span>
+                    <h2 data-i18n="service_packages">Service Packages</h2>
+                    <p class="content-description" data-i18n="transparent_pricing">Transparent pricing for projects of all sizes. All packages include responsive design and basic SEO.</p>
                 </div>
 
                 <div class="pricing-options">
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Basic Website</h3>
+                            <h3 data-i18n="basic_website">Basic Website</h3>
                             <div class="price">$1,200</div>
-                            <p class="price-period">one-time</p>
-                            <p>Perfect for small businesses</p>
+                            <p class="price-period" data-i18n="one_time">one-time</p>
+                            <p data-i18n="perfect_small">Perfect for small businesses</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to 5 Pages</li>
-                            <li><i class="fas fa-check"></i> Responsive Design</li>
-                            <li><i class="fas fa-check"></i> Contact Form</li>
-                            <li><i class="fas fa-check"></i> Basic SEO</li>
-                            <li><i class="fas fa-times"></i> E-commerce</li>
-                            <li><i class="fas fa-times"></i> Custom Features</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="up_to_5_pages">Up to 5 Pages</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="responsive_design">Responsive Design</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="contact_form">Contact Form</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="basic_seo">Basic SEO</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="ecommerce">E-commerce</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="custom_features">Custom Features</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Get Started</a>
+                        <a href="index.html#contact" class="btn" data-i18n="get_started">Get Started</a>
                     </div>
 
                     <div class="pricing-option featured">
-                        <div class="popular-tag">Most Popular</div>
+                        <div class="popular-tag" data-i18n="most_popular">Most Popular</div>
                         <div class="pricing-header">
-                            <h3>Business Website</h3>
+                            <h3 data-i18n="business_website">Business Website</h3>
                             <div class="price">$2,500</div>
-                            <p class="price-period">one-time</p>
-                            <p>For growing businesses</p>
+                            <p class="price-period" data-i18n="one_time">one-time</p>
+                            <p data-i18n="growing_businesses">For growing businesses</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Up to 15 Pages</li>
-                            <li><i class="fas fa-check"></i> CMS Integration</li>
-                            <li><i class="fas fa-check"></i> Advanced SEO</li>
-                            <li><i class="fas fa-check"></i> Contact Forms</li>
-                            <li><i class="fas fa-check"></i> Basic E-commerce</li>
-                            <li><i class="fas fa-check"></i> 6 Months Support</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="up_to_15_pages">Up to 15 Pages</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="cms_integration">CMS Integration</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="advanced_seo">Advanced SEO</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="contact_forms">Contact Forms</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="basic_ecommerce">Basic E-commerce</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="months_support_6">6 Months Support</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn btn-filled">Get Started</a>
+                        <a href="index.html#contact" class="btn btn-filled" data-i18n="get_started">Get Started</a>
                     </div>
 
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Custom Web App</h3>
+                            <h3 data-i18n="custom_web_app">Custom Web App</h3>
                             <div class="price">$5,000+</div>
-                            <p class="price-period">project-based</p>
-                            <p>Enterprise solutions</p>
+                            <p class="price-period" data-i18n="project_based">project-based</p>
+                            <p data-i18n="enterprise_solutions">Enterprise solutions</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Full Custom Development</li>
-                            <li><i class="fas fa-check"></i> User Authentication</li>
-                            <li><i class="fas fa-check"></i> Database Integration</li>
-                            <li><i class="fas fa-check"></i> API Development</li>
-                            <li><i class="fas fa-check"></i> Admin Dashboard</li>
-                            <li><i class="fas fa-check"></i> 12 Months Support</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="full_custom">Full Custom Development</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="user_authentication">User Authentication</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="database_integration">Database Integration</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="api_development">API Development</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="admin_dashboard">Admin Dashboard</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="months_support_12">12 Months Support</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Get Quote</a>
+                        <a href="index.html#contact" class="btn" data-i18n="get_quote">Get Quote</a>
                     </div>
                 </div>
             </div>
@@ -218,44 +221,44 @@
             <!-- Process -->
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Process</span>
-                    <h2>How We Work</h2>
+                    <span class="section-label" data-i18n="process">Process</span>
+                    <h2 data-i18n="how_we_work">How We Work</h2>
                 </div>
 
                 <div class="process-steps">
                     <div class="process-step">
                         <div class="step-number">01</div>
-                        <h3>Discovery</h3>
-                        <p>We analyze your requirements and create a detailed project plan.</p>
+                        <h3 data-i18n="discovery">Discovery</h3>
+                        <p data-i18n="discovery_desc">We analyze your requirements and create a detailed project plan.</p>
                     </div>
 
                     <div class="process-step">
                         <div class="step-number">02</div>
-                        <h3>Design</h3>
-                        <p>Create wireframes and design mockups for your approval.</p>
+                        <h3 data-i18n="design_step">Design</h3>
+                        <p data-i18n="design_step_desc">Create wireframes and design mockups for your approval.</p>
                     </div>
 
                     <div class="process-step">
                         <div class="step-number">03</div>
-                        <h3>Development</h3>
-                        <p>Agile development with regular progress updates.</p>
+                        <h3 data-i18n="development_step">Development</h3>
+                        <p data-i18n="development_desc">Agile development with regular progress updates.</p>
                     </div>
 
                     <div class="process-step">
                         <div class="step-number">04</div>
-                        <h3>Launch</h3>
-                        <p>Thorough testing and smooth deployment.</p>
+                        <h3 data-i18n="launch_step">Launch</h3>
+                        <p data-i18n="launch_desc">Thorough testing and smooth deployment.</p>
                     </div>
                 </div>
             </div>
 
             <!-- CTA -->
             <div class="service-cta">
-                <h2>Start Your Project</h2>
-                <p>Contact us for a free consultation and project estimate.</p>
+                <h2 data-i18n="start_project_web">Start Your Project</h2>
+                <p data-i18n="free_consultation_desc">Contact us for a free consultation and project estimate.</p>
                 <div class="cta-buttons">
-                    <a href="index.html#contact" class="btn btn-filled">Get Free Consultation</a>
-                    <a href="tel:+11234567890" class="btn">Call Now</a>
+                    <a href="index.html#contact" class="btn btn-filled" data-i18n="get_free_consultation">Get Free Consultation</a>
+                    <a href="tel:+11234567890" class="btn" data-i18n="call_now">Call Now</a>
                 </div>
             </div>
         </div>
@@ -265,7 +268,7 @@
     <div class="back-navigation">
         <div class="container">
             <a href="index.html#services" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="back_to_services">Back to All Services</span>
             </a>
         </div>
     </div>
@@ -276,7 +279,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>ServicePro</h3>
-                    <p>Professional services for modern businesses. Delivering excellence since 2015.</p>
+                    <p data-i18n="servicepro_description">Professional services for modern businesses. Delivering excellence since 2015.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -285,35 +288,36 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="services">Services</h4>
                     <ul>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="graphic-design.html">Graphic Design</a></li>
-                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="web.html" data-i18n="web_development">Web Development</a></li>
+                        <li><a href="graphic-design.html" data-i18n="graphic_design">Graphic Design</a></li>
+                        <li><a href="digital-marketing.html" data-i18n="digital_marketing">Digital Marketing</a></li>
+                        <li><a href="app-development.html" data-i18n="app_development">App Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4 data-i18n="quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                        <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>123 Business St.<br>New York, NY 10001<br>United States</p>
-                    <p>info@servicepro.com<br>+1 (212) 555-1234</p>
+                    <h4 data-i18n="contact_footer">Contact</h4>
+                    <p data-i18n="address">123 Business St.<br>New York, NY 10001<br>United States</p>
+                    <p>info@servicepro.com<br><span data-i18n="phone_number">+1 (212) 555-1234</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ServicePro. All rights reserved.</p>
+                <p>&copy; <span data-i18n="copyright_year">2026</span> ServicePro. <span data-i18n="all_rights_reserved">All rights reserved</span>.</p>
             </div>
         </div>
     </footer>
 
+    <script src="language-manager.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
