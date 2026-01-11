@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking in Makkah & Madinah | ServicePro</title>
+    <title data-i18n="hotel_booking">Hotel Booking in Makkah & Madinah | ServicePro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Service<span>Pro</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -26,28 +34,28 @@
 
     <section class="service-detail-hero">
         <div class="container">
-            <span class="service-badge">Travel Service</span>
-            <h1>Hotel Booking in Makkah & Madinah</h1>
-            <p class="service-hero-subtitle">Premium accommodation services for pilgrims and visitors to the Holy Cities.</p>
+            <span class="service-badge" data-i18n="travel_service">Travel Service</span>
+            <h1 data-i18n="hotel_booking">Hotel Booking in Makkah & Madinah</h1>
+            <p class="service-hero-subtitle" data-i18n="hotel_subtitle">Premium accommodation services for pilgrims and visitors to the Holy Cities.</p>
             
             <div class="service-stats">
                 <div class="stat-item">
                     <span class="stat-number">1,000+</span>
-                    <span class="stat-label">Bookings</span>
+                    <span class="stat-label" data-i18n="stat_bookings">Bookings</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support</span>
+                    <span class="stat-label" data-i18n="stat_support">Support</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">98%</span>
-                    <span class="stat-label">Satisfaction</span>
+                    <span class="stat-label" data-i18n="stat_satisfaction">Satisfaction</span>
                 </div>
             </div>
 
             <div class="service-hero-cta">
-                <a href="#pricing" class="btn btn-filled">View Packages</a>
-                <a href="index.html#contact" class="btn">Book Now</a>
+                <a href="#pricing" class="btn btn-filled" data-i18n="view_packages">View Packages</a>
+                <a href="index.html#contact" class="btn" data-i18n="book_now">Book Now</a>
             </div>
         </div>
     </section>
@@ -56,42 +64,42 @@
         <div class="container">
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Services</span>
-                    <h2>Accommodation Options</h2>
-                    <p class="content-description">Premium hotel booking services for all types of travelers to the Holy Cities.</p>
+                    <span class="section-label" data-i18n="services">Services</span>
+                    <h2 data-i18n="accommodation_options">Accommodation Options</h2>
+                    <p class="content-description" data-i18n="accommodation_desc">Premium hotel booking services for all types of travelers to the Holy Cities.</p>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>5-Star Luxury Hotels</h3>
-                        <p>Premium hotels with Haram view and luxury amenities for the ultimate experience.</p>
+                        <h3 data-i18n="luxury_hotels">5-Star Luxury Hotels</h3>
+                        <p data-i18n="luxury_desc">Premium hotels with Haram view and luxury amenities for the ultimate experience.</p>
                         <ul class="offering-features">
-                            <li>Direct Haram View</li>
-                            <li>Luxury Amenities</li>
-                            <li>Private Transfers</li>
-                            <li>24/7 Concierge</li>
+                            <li data-i18n="direct_haram_view">Direct Haram View</li>
+                            <li data-i18n="luxury_amenities">Luxury Amenities</li>
+                            <li data-i18n="private_transfers">Private Transfers</li>
+                            <li data-i18n="concierge_24_7">24/7 Concierge</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>3-4 Star Standard</h3>
-                        <p>Comfortable hotels within walking distance to Haram with essential amenities.</p>
+                        <h3 data-i18n="standard_hotels">3-4 Star Standard</h3>
+                        <p data-i18n="standard_desc">Comfortable hotels within walking distance to Haram with essential amenities.</p>
                         <ul class="offering-features">
-                            <li>Walking Distance to Haram</li>
-                            <li>Comfortable Accommodation</li>
-                            <li>Daily Housekeeping</li>
-                            <li>Restaurant Access</li>
+                            <li data-i18n="walking_distance_to_haram">Walking Distance to Haram</li>
+                            <li data-i18n="comfortable_accommodation">Comfortable Accommodation</li>
+                            <li data-i18n="daily_housekeeping">Daily Housekeeping</li>
+                            <li data-i18n="restaurant_access">Restaurant Access</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Budget & Group</h3>
-                        <p>Affordable options for families and large groups with basic facilities.</p>
+                        <h3 data-i18n="budget_group">Budget & Group</h3>
+                        <p data-i18n="budget_desc">Affordable options for families and large groups with basic facilities.</p>
                         <ul class="offering-features">
-                            <li>Family Rooms Available</li>
-                            <li>Group Discounts</li>
-                            <li>Basic Amenities</li>
-                            <li>Cost-Effective</li>
+                            <li data-i18n="family_rooms_available">Family Rooms Available</li>
+                            <li data-i18n="group_discounts">Group Discounts</li>
+                            <li data-i18n="basic_amenities">Basic Amenities</li>
+                            <li data-i18n="cost_effective">Cost-Effective</li>
                         </ul>
                     </div>
                 </div>
@@ -99,162 +107,162 @@
 
             <div id="pricing" class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Pricing</span>
-                    <h2>Hotel Packages</h2>
-                    <p class="content-description">Comprehensive packages for different durations and requirements.</p>
+                    <span class="section-label" data-i18n="pricing">Pricing</span>
+                    <h2 data-i18n="hotel_packages">Hotel Packages</h2>
+                    <p class="content-description" data-i18n="hotel_packages_desc">Comprehensive packages for different durations and requirements.</p>
                 </div>
 
                 <div class="pricing-options">
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Standard Package</h3>
+                            <h3 data-i18n="standard_package">Standard Package</h3>
                             <div class="price">$600</div>
-                            <p class="price-period">/person</p>
-                            <p>3 Nights in Makkah</p>
+                            <p class="price-period">/<span data-i18n="person">person</span></p>
+                            <p data-i18n="nights_makkah">3 Nights in Makkah</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 3-star hotel near Haram</li>
-                            <li><i class="fas fa-check"></i> Daily breakfast included</li>
-                            <li><i class="fas fa-check"></i> Free WiFi</li>
-                            <li><i class="fas fa-check"></i> Airport pickup</li>
-                            <li><i class="fas fa-times"></i> Haram view room</li>
-                            <li><i class="fas fa-times"></i> Private transfers</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="3_star_hotel_near_haram">3-star hotel near Haram</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="daily_breakfast_included">Daily breakfast included</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="free_wifi">Free WiFi</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="airport_pickup">Airport pickup</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="haram_view_room">Haram view room</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="private_transfers">Private transfers</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Book Now</a>
+                        <a href="index.html#contact" class="btn" data-i18n="book_now">Book Now</a>
                     </div>
 
                     <div class="pricing-option featured">
-                        <div class="popular-tag">Most Popular</div>
+                        <div class="popular-tag" data-i18n="most_popular">Most Popular</div>
                         <div class="pricing-header">
-                            <h3>Premium Package</h3>
+                            <h3 data-i18n="premium_package">Premium Package</h3>
                             <div class="price">$1,200</div>
-                            <p class="price-period">/person</p>
-                            <p>7 Nights (Makkah + Madinah)</p>
+                            <p class="price-period">/<span data-i18n="person">person</span></p>
+                            <p data-i18n="nights_both">7 Nights (Makkah + Madinah)</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 4-star hotels in both cities</li>
-                            <li><i class="fas fa-check"></i> Haram view in Makkah</li>
-                            <li><i class="fas fa-check"></i> All meals included</li>
-                            <li><i class="fas fa-check"></i> Private transfers</li>
-                            <li><i class="fas fa-check"></i> 24/7 guide assistance</li>
-                            <li><i class="fas fa-check"></i> Visa assistance</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="4_star_hotels_both_cities">4-star hotels in both cities</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="haram_view_in_makkah">Haram view in Makkah</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="all_meals_included">All meals included</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="private_transfers">Private transfers</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="guide_assistance_24_7">24/7 guide assistance</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="visa_assistance">Visa assistance</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn btn-filled">Book Now</a>
+                        <a href="index.html#contact" class="btn btn-filled" data-i18n="book_now">Book Now</a>
                     </div>
 
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Luxury Package</h3>
+                            <h3 data-i18n="luxury_package">Luxury Package</h3>
                             <div class="price">$2,500</div>
-                            <p class="price-period">/person</p>
-                            <p>10 Nights Full Service</p>
+                            <p class="price-period">/<span data-i18n="person">person</span></p>
+                            <p data-i18n="full_service">10 Nights Full Service</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> 5-star luxury hotels</li>
-                            <li><i class="fas fa-check"></i> Direct Haram view</li>
-                            <li><i class="fas fa-check"></i> Private butler service</li>
-                            <li><i class="fas fa-check"></i> VIP airport service</li>
-                            <li><i class="fas fa-check"></i> Customized itinerary</li>
-                            <li><i class="fas fa-check"></i> Premium transportation</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="5_star_luxury_hotels">5-star luxury hotels</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="direct_haram_view">Direct Haram view</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="private_butler_service">Private butler service</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="vip_airport_service">VIP airport service</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="customized_itinerary">Customized itinerary</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="premium_transportation">Premium transportation</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Book Now</a>
+                        <a href="index.html#contact" class="btn" data-i18n="book_now">Book Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Special Packages</span>
-                    <h2>Seasonal Offers</h2>
+                    <span class="section-label" data-i18n="special_packages">Special Packages</span>
+                    <h2 data-i18n="seasonal_offers">Seasonal Offers</h2>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Ramadan Package</h3>
-                        <p>Special arrangements for Ramadan with Iftar and Suhoor services included.</p>
+                        <h3 data-i18n="ramadan_package">Ramadan Package</h3>
+                        <p data-i18n="ramadan_desc">Special arrangements for Ramadan with Iftar and Suhoor services included.</p>
                         <ul class="offering-features">
-                            <li>Special Ramadan rates</li>
-                            <li>Iftar & Suhoor arrangements</li>
-                            <li>Taraweeh prayer access</li>
-                            <li>Spiritual guide available</li>
+                            <li data-i18n="ramadan_rates">Special Ramadan rates</li>
+                            <li data-i18n="iftar_suhoor_arrangements">Iftar & Suhoor arrangements</li>
+                            <li data-i18n="taraweeh_prayer_access">Taraweeh prayer access</li>
+                            <li data-i18n="spiritual_guide_available">Spiritual guide available</li>
                         </ul>
-                        <div class="price-tag">From $900/person</div>
+                        <div class="price-tag"><span data-i18n="from">From</span> $900/<span data-i18n="person">person</span></div>
                     </div>
 
                     <div class="offering">
-                        <h3>Hajj Package 2024</h3>
-                        <p>Complete Hajj accommodation package with all necessary arrangements.</p>
+                        <h3 data-i18n="hajj_package">Hajj Package 2026</h3>
+                        <p data-i18n="hajj_desc">Complete Hajj accommodation package with all necessary arrangements.</p>
                         <ul class="offering-features">
-                            <li>Complete Hajj accommodation</li>
-                            <li>Transportation between sites</li>
-                            <li>Medical assistance</li>
-                            <li>Group coordination</li>
+                            <li data-i18n="complete_hajj_accommodation">Complete Hajj accommodation</li>
+                            <li data-i18n="transportation_between_sites">Transportation between sites</li>
+                            <li data-i18n="medical_assistance">Medical assistance</li>
+                            <li data-i18n="group_coordination">Group coordination</li>
                         </ul>
-                        <div class="price-tag">From $5,000/person</div>
+                        <div class="price-tag"><span data-i18n="from">From</span> $5,000/<span data-i18n="person">person</span></div>
                     </div>
 
                     <div class="offering">
-                        <h3>Family Package</h3>
-                        <p>Special rates and arrangements for families traveling together.</p>
+                        <h3 data-i18n="family_package">Family Package</h3>
+                        <p data-i18n="family_desc">Special rates and arrangements for families traveling together.</p>
                         <ul class="offering-features">
-                            <li>Family rooms or suites</li>
-                            <li>Child-friendly facilities</li>
-                            <li>Family discount rates</li>
-                            <li>Private family transfers</li>
+                            <li data-i18n="family_rooms_or_suites">Family rooms or suites</li>
+                            <li data-i18n="child_friendly_facilities">Child-friendly facilities</li>
+                            <li data-i18n="family_discount_rates">Family discount rates</li>
+                            <li data-i18n="private_family_transfers">Private family transfers</li>
                         </ul>
-                        <div class="price-tag">From $3,000/family</div>
+                        <div class="price-tag"><span data-i18n="from">From</span> $3,000/<span data-i18n="family">family</span></div>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Information</span>
-                    <h2>Important Details</h2>
+                    <span class="section-label" data-i18n="information">Information</span>
+                    <h2 data-i18n="important_details">Important Details</h2>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Booking Process</h3>
-                        <p>Simple and transparent booking process with full support throughout.</p>
+                        <h3 data-i18n="booking_process">Booking Process</h3>
+                        <p data-i18n="booking_desc">Simple and transparent booking process with full support throughout.</p>
                         <ul class="offering-features">
-                            <li>Book 60 days in advance</li>
-                            <li>30% deposit required</li>
-                            <li>Balance due 30 days before</li>
-                            <li>Free cancellation up to 30 days</li>
+                            <li data-i18n="book_days_advance">Book 60 days in advance</li>
+                            <li data-i18n="deposit_required">30% deposit required</li>
+                            <li data-i18n="balance_due_days">Balance due 30 days before</li>
+                            <li data-i18n="free_cancellation_days">Free cancellation up to 30 days</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Support Services</h3>
-                        <p>Comprehensive support services to ensure a smooth experience.</p>
+                        <h3 data-i18n="support_services">Support Services</h3>
+                        <p data-i18n="support_desc">Comprehensive support services to ensure a smooth experience.</p>
                         <ul class="offering-features">
-                            <li>24/7 customer support</li>
-                            <li>Airport pickup/dropoff</li>
-                            <li>Local guide assistance</li>
-                            <li>Emergency support</li>
+                            <li data-i18n="customer_support_24_7">24/7 customer support</li>
+                            <li data-i18n="airport_pickup_dropoff">Airport pickup/dropoff</li>
+                            <li data-i18n="local_guide_assistance">Local guide assistance</li>
+                            <li data-i18n="emergency_support">Emergency support</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Additional Services</h3>
-                        <p>Optional services to enhance your travel experience.</p>
+                        <h3 data-i18n="additional_services">Additional Services</h3>
+                        <p data-i18n="additional_desc">Optional services to enhance your travel experience.</p>
                         <ul class="offering-features">
-                            <li>Visa processing assistance</li>
-                            <li>Flight booking service</li>
-                            <li>Local SIM card provision</li>
-                            <li>Transportation arrangements</li>
+                            <li data-i18n="visa_processing_assistance">Visa processing assistance</li>
+                            <li data-i18n="flight_booking_service">Flight booking service</li>
+                            <li data-i18n="local_sim_card_provision">Local SIM card provision</li>
+                            <li data-i18n="transportation_arrangements">Transportation arrangements</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="service-cta">
-                <h2>Book Your Spiritual Journey</h2>
-                <p>Contact us for customized packages and special group rates.</p>
+                <h2 data-i18n="spiritual_journey">Book Your Spiritual Journey</h2>
+                <p data-i18n="contact_customized_packages">Contact us for customized packages and special group rates.</p>
                 <div class="cta-buttons">
-                    <a href="index.html#contact" class="btn btn-filled">Contact Us Now</a>
-                    <a href="tel:+11234567890" class="btn">Call Booking Desk</a>
+                    <a href="index.html#contact" class="btn btn-filled" data-i18n="contact_us_now">Contact Us Now</a>
+                    <a href="tel:+11234567890" class="btn" data-i18n="call_booking_desk">Call Booking Desk</a>
                 </div>
             </div>
         </div>
@@ -263,7 +271,7 @@
     <div class="back-navigation">
         <div class="container">
             <a href="index.html#services" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="back_to_services">Back to All Services</span>
             </a>
         </div>
     </div>
@@ -273,7 +281,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>ServicePro</h3>
-                    <p>Professional services for modern businesses. Delivering excellence since 2015.</p>
+                    <p data-i18n="servicepro_description">Professional services for modern businesses. Delivering excellence since 2015.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -282,35 +290,36 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="services">Services</h4>
                     <ul>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="graphic-design.html">Graphic Design</a></li>
-                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="web.html" data-i18n="web_development">Web Development</a></li>
+                        <li><a href="graphic-design.html" data-i18n="graphic_design">Graphic Design</a></li>
+                        <li><a href="digital-marketing.html" data-i18n="digital_marketing">Digital Marketing</a></li>
+                        <li><a href="app-development.html" data-i18n="app_development">App Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4 data-i18n="quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                        <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>123 Business St.<br>New York, NY 10001<br>United States</p>
-                    <p>travel@servicepro.com<br>+1 (212) 555-1234</p>
+                    <h4 data-i18n="contact_footer">Contact</h4>
+                    <p data-i18n="address">123 Business St.<br>New York, NY 10001<br>United States</p>
+                    <p>travel@servicepro.com<br><span data-i18n="phone_number">+1 (212) 555-1234</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ServicePro. All rights reserved.</p>
+                <p>&copy; <span data-i18n="copyright_year">2026</span> ServicePro. <span data-i18n="all_rights_reserved">All rights reserved</span>.</p>
             </div>
         </div>
     </footer>
 
+    <script src="language-manager.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
