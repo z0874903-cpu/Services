@@ -1,0 +1,158 @@
+/* RTL Specific Styles */
+body.rtl {
+    font-family: 'Inter', 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+}
+
+/* Navigation RTL */
+body.rtl .navbar .container {
+    flex-direction: row-reverse;
+}
+
+body.rtl .nav-links {
+    margin-left: 0;
+    margin-right: auto;
+    padding-right: 0;
+}
+
+body.rtl .language-switcher {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+body.rtl .menu-toggle {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Hero Section RTL */
+body.rtl .hero .container {
+    direction: rtl;
+}
+
+body.rtl .hero-content {
+    text-align: right;
+}
+
+body.rtl .hero-content p {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Service Cards RTL */
+body.rtl .service-features {
+    padding-right: 0;
+}
+
+body.rtl .service-card .badge,
+body.rtl .service-card .popular-tag {
+    left: 20px;
+    right: auto;
+}
+
+/* Contact Form RTL */
+body.rtl .contact-form input,
+body.rtl .contact-form textarea {
+    text-align: right;
+}
+
+body.rtl .info-item {
+    flex-direction: row-reverse;
+}
+
+body.rtl .info-item i {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* Testimonials RTL */
+body.rtl .testimonial-content .quote-icon {
+    left: auto;
+    right: 30px;
+}
+
+/* Pricing RTL */
+body.rtl .pricing-features li {
+    text-align: right;
+}
+
+body.rtl .pricing-features i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* Footer RTL */
+body.rtl .footer-section ul {
+    padding-right: 0;
+}
+
+body.rtl .social-links {
+    justify-content: flex-start;
+}
+
+/* Back Navigation RTL */
+body.rtl .back-link i {
+    transform: rotate(180deg);
+}
+
+/* Tech Tags RTL */
+body.rtl .tech-tags {
+    justify-content: flex-end;
+}
+
+/* Process Steps RTL */
+body.rtl .process-step {
+    text-align: right;
+}
+
+/* Service Details RTL */
+body.rtl .offering-features {
+    padding-right: 0;
+}
+
+body.rtl .offering-features li {
+    text-align: right;
+}
+
+/* Adjust margins for RTL */
+body.rtl .ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+body.rtl .mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+/* Adjust padding for RTL */
+body.rtl .pl-20 {
+    padding-left: 0 !important;
+    padding-right: 20px !important;
+}
+
+body.rtl .pr-20 {
+    padding-right: 0 !important;
+    padding-left: 20px !important;
+}
+
+/* Fix for icons in RTL */
+body.rtl .fa-arrow-left:before {
+    content: "\f061";
+}
+
+body.rtl .fa-arrow-right:before {
+    content: "\f060";
+}
+
+/* Form elements RTL */
+body.rtl input[type="checkbox"],
+body.rtl input[type="radio"] {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Slider controls RTL */
+body.rtl .slider-controls {
+    direction: ltr;
+}
