@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Development | ServicePro</title>
+    <title data-i18n="app_development">App Development | ServicePro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Service<span>Pro</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -26,28 +34,28 @@
 
     <section class="service-detail-hero">
         <div class="container">
-            <span class="service-badge">Development Service</span>
-            <h1>App Development</h1>
-            <p class="service-hero-subtitle">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+            <span class="service-badge" data-i18n="development_service">Development Service</span>
+            <h1 data-i18n="app_development">App Development</h1>
+            <p class="service-hero-subtitle" data-i18n="app_desc">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
             
             <div class="service-stats">
                 <div class="stat-item">
                     <span class="stat-number">50+</span>
-                    <span class="stat-label">Apps</span>
+                    <span class="stat-label" data-i18n="stat_apps">Apps</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">4.8★</span>
-                    <span class="stat-label">Rating</span>
+                    <span class="stat-label" data-i18n="stat_rating">Rating</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">100%</span>
-                    <span class="stat-label">Store Approval</span>
+                    <span class="stat-label" data-i18n="stat_store_approval">Store Approval</span>
                 </div>
             </div>
 
             <div class="service-hero-cta">
-                <a href="#pricing" class="btn btn-filled">View Pricing</a>
-                <a href="index.html#contact" class="btn">Discuss Project</a>
+                <a href="#pricing" class="btn btn-filled" data-i18n="view_pricing">View Pricing</a>
+                <a href="index.html#contact" class="btn" data-i18n="discuss_project">Discuss Project</a>
             </div>
         </div>
     </section>
@@ -56,42 +64,42 @@
         <div class="container">
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Services</span>
-                    <h2>Development Types</h2>
-                    <p class="content-description">Comprehensive app development services for all platforms and requirements.</p>
+                    <span class="section-label" data-i18n="services">Services</span>
+                    <h2 data-i18n="development_types">Development Types</h2>
+                    <p class="content-description" data-i18n="development_desc">Comprehensive app development services for all platforms and requirements.</p>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Native iOS</h3>
-                        <p>High-performance iOS apps using Swift and SwiftUI for Apple devices.</p>
+                        <h3 data-i18n="native_ios">Native iOS</h3>
+                        <p data-i18n="ios_desc">High-performance iOS apps using Swift and SwiftUI for Apple devices.</p>
                         <ul class="offering-features">
-                            <li>Swift/SwiftUI</li>
-                            <li>App Store Optimization</li>
-                            <li>Apple Watch Apps</li>
-                            <li>iPad Optimization</li>
+                            <li data-i18n="swift_swiftui">Swift/SwiftUI</li>
+                            <li data-i18n="app_store_optimization">App Store Optimization</li>
+                            <li data-i18n="apple_watch_apps">Apple Watch Apps</li>
+                            <li data-i18n="ipad_optimization">iPad Optimization</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Native Android</h3>
-                        <p>Robust Android apps using Kotlin and Jetpack Compose for Google Play.</p>
+                        <h3 data-i18n="native_android">Native Android</h3>
+                        <p data-i18n="android_desc">Robust Android apps using Kotlin and Jetpack Compose for Google Play.</p>
                         <ul class="offering-features">
-                            <li>Kotlin/Java</li>
-                            <li>Material Design</li>
-                            <li>Google Play Store</li>
-                            <li>Android TV Apps</li>
+                            <li data-i18n="kotlin_java">Kotlin/Java</li>
+                            <li data-i18n="material_design">Material Design</li>
+                            <li data-i18n="google_play_store">Google Play Store</li>
+                            <li data-i18n="android_tv_apps">Android TV Apps</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Cross-Platform</h3>
-                        <p>Single codebase apps for both iOS and Android using React Native or Flutter.</p>
+                        <h3 data-i18n="cross_platform">Cross-Platform</h3>
+                        <p data-i18n="cross_desc">Single codebase apps for both iOS and Android using React Native or Flutter.</p>
                         <ul class="offering-features">
-                            <li>React Native</li>
-                            <li>Flutter</li>
-                            <li>Faster Development</li>
-                            <li>Cost-Effective</li>
+                            <li data-i18n="react_native">React Native</li>
+                            <li data-i18n="flutter">Flutter</li>
+                            <li data-i18n="faster_development">Faster Development</li>
+                            <li data-i18n="cost_effective">Cost-Effective</li>
                         </ul>
                     </div>
                 </div>
@@ -99,41 +107,41 @@
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Technology</span>
-                    <h2>Development Stack</h2>
+                    <span class="section-label" data-i18n="technology">Technology</span>
+                    <h2 data-i18n="technology_stack">Development Stack</h2>
                 </div>
 
                 <div class="tech-stack">
                     <div class="tech-category">
-                        <h3>iOS Development</h3>
+                        <h3 data-i18n="ios_development">iOS Development</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">Swift</span>
-                            <span class="tech-tag">SwiftUI</span>
-                            <span class="tech-tag">UIKit</span>
-                            <span class="tech-tag">Xcode</span>
-                            <span class="tech-tag">Core Data</span>
+                            <span class="tech-tag" data-i18n="swift">Swift</span>
+                            <span class="tech-tag" data-i18n="swiftui">SwiftUI</span>
+                            <span class="tech-tag" data-i18n="uikit">UIKit</span>
+                            <span class="tech-tag" data-i18n="xcode">Xcode</span>
+                            <span class="tech-tag" data-i18n="core_data">Core Data</span>
                         </div>
                     </div>
 
                     <div class="tech-category">
-                        <h3>Android Development</h3>
+                        <h3 data-i18n="android_development">Android Development</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Jetpack Compose</span>
-                            <span class="tech-tag">Android Studio</span>
-                            <span class="tech-tag">Room DB</span>
+                            <span class="tech-tag" data-i18n="kotlin">Kotlin</span>
+                            <span class="tech-tag" data-i18n="java">Java</span>
+                            <span class="tech-tag" data-i18n="jetpack_compose">Jetpack Compose</span>
+                            <span class="tech-tag" data-i18n="android_studio">Android Studio</span>
+                            <span class="tech-tag" data-i18n="room_db">Room DB</span>
                         </div>
                     </div>
 
                     <div class="tech-category">
-                        <h3>Cross-Platform</h3>
+                        <h3 data-i18n="cross_platform">Cross-Platform</h3>
                         <div class="tech-tags">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Xamarin</span>
-                            <span class="tech-tag">Ionic</span>
+                            <span class="tech-tag" data-i18n="react_native">React Native</span>
+                            <span class="tech-tag" data-i18n="flutter">Flutter</span>
+                            <span class="tech-tag" data-i18n="firebase">Firebase</span>
+                            <span class="tech-tag" data-i18n="xamarin">Xamarin</span>
+                            <span class="tech-tag" data-i18n="ionic">Ionic</span>
                         </div>
                     </div>
                 </div>
@@ -141,120 +149,120 @@
 
             <div id="pricing" class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Pricing</span>
-                    <h2>Development Packages</h2>
-                    <p class="content-description">Project-based pricing for different app complexities and requirements.</p>
+                    <span class="section-label" data-i18n="pricing">Pricing</span>
+                    <h2 data-i18n="development_packages">Development Packages</h2>
+                    <p class="content-description" data-i18n="pricing_desc">Project-based pricing for different app complexities and requirements.</p>
                 </div>
 
                 <div class="pricing-options">
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Basic App</h3>
+                            <h3 data-i18n="basic_app">Basic App</h3>
                             <div class="price">$5,000</div>
-                            <p class="price-period">one-time</p>
-                            <p>Simple utility apps</p>
+                            <p class="price-period" data-i18n="one_time">one-time</p>
+                            <p data-i18n="simple_apps">Simple utility apps</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Cross-platform (1 platform)</li>
-                            <li><i class="fas fa-check"></i> Basic UI/UX Design</li>
-                            <li><i class="fas fa-check"></i> 5-10 Screens</li>
-                            <li><i class="fas fa-check"></i> Basic Features</li>
-                            <li><i class="fas fa-times"></i> Backend Integration</li>
-                            <li><i class="fas fa-times"></i> Admin Panel</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="cross_platform_1_platform">Cross-platform (1 platform)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="basic_ui_ux_design">Basic UI/UX Design</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="5_10_screens">5-10 Screens</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="basic_features">Basic Features</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="backend_integration">Backend Integration</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="admin_panel">Admin Panel</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Get Quote</a>
+                        <a href="index.html#contact" class="btn" data-i18n="get_quote">Get Quote</a>
                     </div>
 
                     <div class="pricing-option featured">
-                        <div class="popular-tag">Most Popular</div>
+                        <div class="popular-tag" data-i18n="most_popular">Most Popular</div>
                         <div class="pricing-header">
-                            <h3>Business App</h3>
+                            <h3 data-i18n="business_app">Business App</h3>
                             <div class="price">$15,000</div>
-                            <p class="price-period">one-time</p>
-                            <p>Full-featured business apps</p>
+                            <p class="price-period" data-i18n="one_time">one-time</p>
+                            <p data-i18n="full_featured">Full-featured business apps</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Native (iOS & Android)</li>
-                            <li><i class="fas fa-check"></i> Custom UI/UX Design</li>
-                            <li><i class="fas fa-check"></i> 15-25 Screens</li>
-                            <li><i class="fas fa-check"></i> Backend API Integration</li>
-                            <li><i class="fas fa-check"></i> User Authentication</li>
-                            <li><i class="fas fa-check"></i> Basic Admin Panel</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="native_ios_android">Native (iOS & Android)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="custom_ui_ux_design">Custom UI/UX Design</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="15_25_screens">15-25 Screens</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="backend_api_integration">Backend API Integration</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="user_authentication">User Authentication</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="basic_admin_panel">Basic Admin Panel</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn btn-filled">Start Project</a>
+                        <a href="index.html#contact" class="btn btn-filled" data-i18n="start_project">Start Project</a>
                     </div>
 
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Enterprise App</h3>
+                            <h3 data-i18n="enterprise_app">Enterprise App</h3>
                             <div class="price">$30,000+</div>
-                            <p class="price-period">project-based</p>
-                            <p>Complex enterprise solutions</p>
+                            <p class="price-period" data-i18n="project_based">project-based</p>
+                            <p data-i18n="complex_solutions">Complex enterprise solutions</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Multi-platform Native</li>
-                            <li><i class="fas fa-check"></i> Premium UI/UX Design</li>
-                            <li><i class="fas fa-check"></i> 30+ Screens</li>
-                            <li><i class="fas fa-check"></i> Custom Backend Development</li>
-                            <li><i class="fas fa-check"></i> Advanced Features</li>
-                            <li><i class="fas fa-check"></i> Full Admin Dashboard</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="multi_platform_native">Multi-platform Native</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="premium_ui_ux_design">Premium UI/UX Design</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="30_plus_screens">30+ Screens</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="custom_backend_development">Custom Backend Development</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="advanced_features">Advanced Features</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="full_admin_dashboard">Full Admin Dashboard</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Contact for Quote</a>
+                        <a href="index.html#contact" class="btn" data-i18n="contact_for_quote">Contact for Quote</a>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Maintenance</span>
-                    <h2>Support Packages</h2>
+                    <span class="section-label" data-i18n="maintenance">Maintenance</span>
+                    <h2 data-i18n="support_packages">Support Packages</h2>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>Basic Maintenance</h3>
-                        <p>Essential support and updates for your mobile application.</p>
+                        <h3 data-i18n="basic_maintenance">Basic Maintenance</h3>
+                        <p data-i18n="maintenance_desc">Essential support and updates for your mobile application.</p>
                         <ul class="offering-features">
-                            <li>Bug fixes & updates</li>
-                            <li>App store compliance</li>
-                            <li>Basic support</li>
-                            <li>Monthly reports</li>
+                            <li data-i18n="bug_fixes_updates">Bug fixes & updates</li>
+                            <li data-i18n="app_store_compliance">App store compliance</li>
+                            <li data-i18n="basic_support">Basic support</li>
+                            <li data-i18n="monthly_reports">Monthly reports</li>
                         </ul>
-                        <div class="price-tag">$300/month</div>
+                        <div class="price-tag">$300/<span data-i18n="month">month</span></div>
                     </div>
 
                     <div class="offering">
-                        <h3>Growth Maintenance</h3>
-                        <p>Comprehensive support including feature updates and optimization.</p>
+                        <h3 data-i18n="growth_maintenance">Growth Maintenance</h3>
+                        <p data-i18n="growth_desc">Comprehensive support including feature updates and optimization.</p>
                         <ul class="offering-features">
-                            <li>All Basic features</li>
-                            <li>Regular feature updates</li>
-                            <li>Performance optimization</li>
-                            <li>Priority support</li>
+                            <li data-i18n="all_basic_features">All Basic features</li>
+                            <li data-i18n="regular_feature_updates">Regular feature updates</li>
+                            <li data-i18n="performance_optimization">Performance optimization</li>
+                            <li data-i18n="priority_support">Priority support</li>
                         </ul>
-                        <div class="price-tag">$600/month</div>
+                        <div class="price-tag">$600/<span data-i18n="month">month</span></div>
                     </div>
 
                     <div class="offering">
-                        <h3>Enterprise Support</h3>
-                        <p>Full-scale support with dedicated resources and 24/7 availability.</p>
+                        <h3 data-i18n="enterprise_support">Enterprise Support</h3>
+                        <p data-i18n="enterprise_desc">Full-scale support with dedicated resources and 24/7 availability.</p>
                         <ul class="offering-features">
-                            <li>All Growth features</li>
-                            <li>Dedicated developer</li>
-                            <li>24/7 emergency support</li>
-                            <li>Monthly strategy sessions</li>
+                            <li data-i18n="all_growth_features">All Growth features</li>
+                            <li data-i18n="dedicated_developer">Dedicated developer</li>
+                            <li data-i18n="emergency_support_24_7">24/7 emergency support</li>
+                            <li data-i18n="monthly_strategy_sessions">Monthly strategy sessions</li>
                         </ul>
-                        <div class="price-tag">$1,000/month</div>
+                        <div class="price-tag">$1,000/<span data-i18n="month">month</span></div>
                     </div>
                 </div>
             </div>
 
             <div class="service-cta">
-                <h2>Build Your App</h2>
-                <p>Get a free consultation and project estimate for your mobile application.</p>
+                <h2 data-i18n="build_app">Build Your App</h2>
+                <p data-i18n="build_desc">Get a free consultation and project estimate for your mobile application.</p>
                 <div class="cta-buttons">
-                    <a href="index.html#contact" class="btn btn-filled">Start Your App</a>
-                    <a href="index.html#testimonials" class="btn">View Case Studies</a>
+                    <a href="index.html#contact" class="btn btn-filled" data-i18n="start_app">Start Your App</a>
+                    <a href="index.html#testimonials" class="btn" data-i18n="view_cases">View Case Studies</a>
                 </div>
             </div>
         </div>
@@ -263,7 +271,7 @@
     <div class="back-navigation">
         <div class="container">
             <a href="index.html#services" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="back_to_services">Back to All Services</span>
             </a>
         </div>
     </div>
@@ -273,7 +281,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>ServicePro</h3>
-                    <p>Professional services for modern businesses. Delivering excellence since 2015.</p>
+                    <p data-i18n="servicepro_description">Professional services for modern businesses. Delivering excellence since 2015.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -282,35 +290,36 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="services">Services</h4>
                     <ul>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="graphic-design.html">Graphic Design</a></li>
-                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="web.html" data-i18n="web_development">Web Development</a></li>
+                        <li><a href="graphic-design.html" data-i18n="graphic_design">Graphic Design</a></li>
+                        <li><a href="digital-marketing.html" data-i18n="digital_marketing">Digital Marketing</a></li>
+                        <li><a href="app-development.html" data-i18n="app_development">App Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4 data-i18n="quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                        <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>123 Business St.<br>New York, NY 10001<br>United States</p>
-                    <p>apps@servicepro.com<br>+1 (212) 555-1234</p>
+                    <h4 data-i18n="contact_footer">Contact</h4>
+                    <p data-i18n="address">123 Business St.<br>New York, NY 10001<br>United States</p>
+                    <p>apps@servicepro.com<br><span data-i18n="phone_number">+1 (212) 555-1234</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ServicePro. All rights reserved.</p>
+                <p>&copy; <span data-i18n="copyright_year">2026</span> ServicePro. <span data-i18n="all_rights_reserved">All rights reserved</span>.</p>
             </div>
         </div>
     </footer>
 
+    <script src="language-manager.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
