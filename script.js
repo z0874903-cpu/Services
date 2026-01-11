@@ -186,3 +186,126 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Language Switching Functionality
+let currentLanguage = 'en';
+
+// Language data object
+let languageData = {};
+
+// Initialize language
+async function initLanguage() {
+    try {
+        // Load language files
+        const enResponse = await fetch('lang/en.json');
+        const arResponse = await fetch('lang/ar.json');
+        
+        languageData.en = await enResponse.json();
+        languageData.ar = await arResponse.json();
+        
+        // Get saved language preference
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang && (savedLang === 'en' || savedLang === 'ar')) {
+            currentLanguage = savedLang;
+        }
+        
+        // Update language switcher UI
+        updateLanguageSwitcherUI();
+        
+        // Apply current language
+        applyLanguage();
+        
+        // Add language switch event listeners
+        setupLanguageSwitcher();
+    } catch (error) {
+        console.error('Error loading language files:', error);
+    }
+}
+
+function updateLanguageSwitcherUI() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        if (btn.dataset.lang === currentLanguage) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function setupLanguageSwitcher() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.dataset.lang;
+            if (lang && lang !== currentLanguage) {
+                currentLanguage = lang;
+                localStorage.setItem('preferredLanguage', lang);
+                updateLanguageSwitcherUI();
+                applyLanguage();
+                
+                // Update direction for Arabic
+                if (lang === 'ar') {
+                    document.documentElement.dir = 'rtl';
+                    document.documentElement.lang = 'ar';
+                } else {
+                    document.documentElement.dir = 'ltr';
+                    document.documentElement.lang = 'en';
+                }
+            }
+        });
+    });
+}
+
+function applyLanguage() {
+    if (!languageData[currentLanguage]) return;
+    
+    const lang = languageData[currentLanguage];
+    
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (lang[key]) {
+            element.textContent = lang[key];
+        }
+    });
+    
+    // Update all input placeholders with data-i18n-placeholder attribute
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (lang[key]) {
+            element.placeholder = lang[key];
+        }
+    });
+    
+    // Update page title if needed
+    const pageTitle = document.querySelector('[data-i18n-title]');
+    if (pageTitle && lang[pageTitle.getAttribute('data-i18n-title')]) {
+        document.title = lang[pageTitle.getAttribute('data-i18n-title')];
+    }
+}
+
+// Initialize language when DOM is loaded
+document.addEventListener('DOMContentLoaded', initLanguage);
+
+// Detect user's preferred language
+function detectUserLanguage() {
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang.startsWith('ar')) {
+        return 'ar';
+    }
+    return 'en';
+}
+
+// Set initial language based on user preference if not already set
+if (!localStorage.getItem('preferredLanguage')) {
+    const detectedLang = detectUserLanguage();
+    localStorage.setItem('preferredLanguage', detectedLang);
+    currentLanguage = detectedLang;
+    
+    // Apply RTL for Arabic immediately
+    if (detectedLang === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+    }
+}
