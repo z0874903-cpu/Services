@@ -1,4 +1,340 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="servicepro_title">ServicePro | Professional Business Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Service<span>Pro</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="home">Home</a></li>
+                <li><a href="#services" data-i18n="services">Services</a></li>
+                <li><a href="#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                <li><a href="#contact" data-i18n="contact">Contact</a></li>
+            </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Elevating Business with Professional Excellence</h1>
+                <p data-i18n="hero_subtitle">We deliver premium services that transform your vision into reality. Experience unparalleled quality, reliability, and results with our expert solutions.</p>
+                <div class="hero-cta">
+                    <a href="#services" class="btn btn-primary" data-i18n="explore_services">Explore Services</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="contact_us">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Professional Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="our_services">Our Premium Services</h2>
+            <p class="section-subtitle" data-i18n="services_subtitle">Comprehensive solutions tailored to your business needs</p>
+            
+            <div class="services-grid">
+                <!-- Web Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-i18n="web_development">Web Development</h3>
+                    <p data-i18n="web_desc">Custom websites and web applications built with cutting-edge technologies for optimal performance.</p>
+                    <ul class="service-features">
+                        <li data-i18n="responsive_design">Responsive Design</li>
+                        <li data-i18n="ecommerce_solutions">E-commerce Solutions</li>
+                        <li data-i18n="cms_integration">CMS Integration</li>
+                        <li data-i18n="performance_optimization">Performance Optimization</li>
+                    </ul>
+                    <div class="price-tag"><span data-i18n="starting_from">Starting from</span> $1,200</div>
+                    <a href="web.html" class="service-btn" data-i18n="view_details">View Details</a>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 data-i18n="graphic_design">Graphic Design</h3>
+                    <p data-i18n="graphic_desc">Creative design solutions that communicate your brand's essence and captivate your audience.</p>
+                    <ul class="service-features">
+                        <li data-i18n="logo_brand_identity">Logo & Brand Identity</li>
+                        <li data-i18n="marketing_materials">Marketing Materials</li>
+                        <li data-i18n="print_design">Print Design</li>
+                        <li data-i18n="ui_ux_design">UI/UX Design</li>
+                    </ul>
+                    <div class="price-tag"><span data-i18n="starting_from">Starting from</span> $600</div>
+                    <a href="graphic-design.html" class="service-btn" data-i18n="view_details">View Details</a>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="digital_marketing">Digital Marketing</h3>
+                    <p data-i18n="marketing_desc">Data-driven strategies to increase visibility, drive traffic, and maximize your online presence.</p>
+                    <ul class="service-features">
+                        <li data-i18n="seo_optimization">SEO Optimization</li>
+                        <li data-i18n="social_media_marketing">Social Media Marketing</li>
+                        <li data-i18n="content_strategy">Content Strategy</li>
+                        <li data-i18n="analytics_reporting">Analytics & Reporting</li>
+                    </ul>
+                    <div class="price-tag"><span data-i18n="starting_from">Starting from</span> $900/<span data-i18n="month">month</span></div>
+                    <a href="digital-marketing.html" class="service-btn" data-i18n="view_details">View Details</a>
+                </div>
+
+                <!-- App Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-i18n="app_development">App Development</h3>
+                    <p data-i18n="app_desc">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                    <ul class="service-features">
+                        <li data-i18n="ios_android_development">iOS & Android Development</li>
+                        <li data-i18n="ui_ux_design">UI/UX Design</li>
+                        <li data-i18n="app_store_optimization">App Store Optimization</li>
+                        <li data-i18n="maintenance_support">Maintenance & Support</li>
+                    </ul>
+                    <div class="price-tag"><span data-i18n="starting_from">Starting from</span> $3,000</div>
+                    <a href="app-development.html" class="service-btn" data-i18n="view_details">View Details</a>
+                </div>
+
+                <!-- Hotel Booking -->
+                <div class="service-card featured">
+                    <div class="badge" data-i18n="new_service">New Service</div>
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3 data-i18n="hotel_booking">Hotel Booking in Makkah & Madinah</h3>
+                    <p data-i18n="hotel_desc">Premium accommodation services for pilgrims and visitors to the Holy Cities.</p>
+                    <ul class="service-features">
+                        <li data-i18n="hotels_near_haram">Hotels Near Haram</li>
+                        <li data-i18n="5_star_to_budget_options">5-star to Budget Options</li>
+                        <li data-i18n="group_bookings">Group Bookings</li>
+                        <li data-i18n="airport_transfers">Airport Transfers</li>
+                        <li data-i18n="24_7_support">24/7 Support</li>
+                        <li data-i18n="special_packages">Special Packages</li>
+                    </ul>
+                    <div class="price-tag" data-i18n="custom_packages_available">Custom Packages Available</div>
+                    <a href="hotel.html" class="service-btn hotel-btn" data-i18n="view_packages">View Packages</a>
+                </div>
+
+                <!-- Business Startup -->
+                <div class="service-card featured">
+                    <div class="badge" data-i18n="most_popular">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <h3 data-i18n="business_startup">Business Startup Package</h3>
+                    <p data-i18n="business_desc">Complete end-to-end support for launching and growing your business successfully.</p>
+                    <ul class="service-features">
+                        <li data-i18n="business_plan_development_feature">Business Plan Development</li>
+                        <li data-i18n="legal_registration">Legal Registration</li>
+                        <li data-i18n="branding_identity">Branding & Identity</li>
+                        <li data-i18n="website_marketing">Website & Marketing</li>
+                        <li data-i18n="3_month_mentorship">3-Month Mentorship</li>
+                        <li data-i18n="funding_assistance">Funding Assistance</li>
+                    </ul>
+                    <div class="price-tag"><span data-i18n="complete_package">Complete Package</span>: $3,200</div>
+                    <a href="business-startup.html" class="service-btn business-btn" data-i18n="start_journey">Start Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-i18n="client_stories">Client Success Stories</h2>
+            <p class="section-subtitle" data-i18n="testimonials_subtitle">What our clients say about working with us</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"ServicePro transformed our online presence. Their web development team delivered a stunning website that perfectly represents our brand. The attention to detail and professionalism were exceptional."</p>
+                        <div class="client">
+                            <div class="client-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CEO, TechVision Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The business startup package was exactly what we needed. From legal setup to marketing strategy, every aspect was handled professionally. We launched successfully and exceeded our first-year targets."</p>
+                        <div class="client">
+                            <div class="client-info">
+                                <h4>Michael Chen</h4>
+                                <span>Founder, GreenLife Organics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Our Umrah trip was made seamless thanks to ServicePro's hotel booking service. They arranged perfect accommodations near Haram and provided excellent support throughout our journey."</p>
+                        <div class="client">
+                            <div class="client-info">
+                                <h4>Ahmad Al-Saud</h4>
+                                <span>Pilgrimage Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="get_in_touch">Get In Touch</h2>
+            <p class="section-subtitle" data-i18n="contact_subtitle">Ready to elevate your business? Let's discuss your project</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 data-i18n="contact_info">Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p data-i18n="address">123 Business Avenue<br>Suite 500<br>New York, NY 10001</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p data-i18n="phone">+1 (212) 555-1234<br>+1 (212) 555-5678</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p data-i18n="email">info@servicepro.com<br>support@servicepro.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p data-i18n="hours">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required data-i18n-placeholder="your_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required data-i18n-placeholder="your_email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required data-i18n-placeholder="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required data-i18n-placeholder="your_message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="send_message">Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ServicePro</h3>
+                    <p data-i18n="servicepro_description">Professional services for modern businesses. Delivering excellence since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="home">Home</a></li>
+                        <li><a href="#services" data-i18n="services">Services</a></li>
+                        <li><a href="#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                        <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="our_services_footer">Our Services</h4>
+                    <ul>
+                        <li><a href="web.html" data-i18n="web_development">Web Development</a></li>
+                        <li><a href="graphic-design.html" data-i18n="graphic_design">Graphic Design</a></li>
+                        <li><a href="digital-marketing.html" data-i18n="digital_marketing">Digital Marketing</a></li>
+                        <li><a href="app-development.html" data-i18n="app_development">App Development</a></li>
+                        <li><a href="hotel.html" data-i18n="hotel_booking">Hotel Booking</a></li>
+                        <li><a href="business-startup.html" data-i18n="business_startup">Business Startup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="contact_info_footer">Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="phone_number">+1 (212) 555-1234</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="email_address">info@servicepro.com</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="address_line_1">123 Business Ave, NY 10001</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span data-i18n="copyright_year">2026</span> ServicePro. <span data-i18n="all_rights_reserved">All Rights Reserved</span>. | <span data-i18n="designed_with_excellence">Designed with Excellence</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="language-manager.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -325,4 +661,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
