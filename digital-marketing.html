@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing | ServicePro</title>
+    <title data-i18n="digital_marketing">Digital Marketing | ServicePro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Service<span>Pro</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -26,28 +34,28 @@
 
     <section class="service-detail-hero">
         <div class="container">
-            <span class="service-badge">Marketing Service</span>
-            <h1>Digital Marketing</h1>
-            <p class="service-hero-subtitle">Data-driven strategies that increase visibility, drive traffic, and boost conversions for your business.</p>
+            <span class="service-badge" data-i18n="marketing_service">Marketing Service</span>
+            <h1 data-i18n="digital_marketing">Digital Marketing</h1>
+            <p class="service-hero-subtitle" data-i18n="marketing_subtitle">Data-driven strategies that increase visibility, drive traffic, and boost conversions for your business.</p>
             
             <div class="service-stats">
                 <div class="stat-item">
                     <span class="stat-number">300%</span>
-                    <span class="stat-label">Average ROI</span>
+                    <span class="stat-label" data-i18n="stat_average_roi">Average ROI</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">50+</span>
-                    <span class="stat-label">Campaigns</span>
+                    <span class="stat-label" data-i18n="stat_campaigns">Campaigns</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">24/7</span>
-                    <span class="stat-label">Monitoring</span>
+                    <span class="stat-label" data-i18n="stat_monitoring">Monitoring</span>
                 </div>
             </div>
 
             <div class="service-hero-cta">
-                <a href="#pricing" class="btn btn-filled">View Plans</a>
-                <a href="index.html#contact" class="btn">Free Audit</a>
+                <a href="#pricing" class="btn btn-filled" data-i18n="view_plans">View Plans</a>
+                <a href="index.html#contact" class="btn" data-i18n="free_audit">Free Audit</a>
             </div>
         </div>
     </section>
@@ -56,42 +64,42 @@
         <div class="container">
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Services</span>
-                    <h2>Marketing Solutions</h2>
-                    <p class="content-description">Comprehensive digital marketing services to grow your online presence and drive results.</p>
+                    <span class="section-label" data-i18n="services">Services</span>
+                    <h2 data-i18n="marketing_solutions">Marketing Solutions</h2>
+                    <p class="content-description" data-i18n="solutions_desc">Comprehensive digital marketing services to grow your online presence and drive results.</p>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>SEO Optimization</h3>
-                        <p>Improve your search engine rankings and drive organic traffic to your website.</p>
+                        <h3 data-i18n="seo_optimization">SEO Optimization</h3>
+                        <p data-i18n="seo_desc">Improve your search engine rankings and drive organic traffic to your website.</p>
                         <ul class="offering-features">
-                            <li>Keyword Research</li>
-                            <li>On-Page SEO</li>
-                            <li>Technical SEO</li>
-                            <li>Link Building</li>
+                            <li data-i18n="keyword_research">Keyword Research</li>
+                            <li data-i18n="on_page_seo">On-Page SEO</li>
+                            <li data-i18n="technical_seo">Technical SEO</li>
+                            <li data-i18n="link_building">Link Building</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Social Media Marketing</h3>
-                        <p>Engage your audience across all social platforms with strategic content.</p>
+                        <h3 data-i18n="social_media_marketing">Social Media Marketing</h3>
+                        <p data-i18n="social_desc">Engage your audience across all social platforms with strategic content.</p>
                         <ul class="offering-features">
-                            <li>Content Strategy</li>
-                            <li>Community Management</li>
-                            <li>Paid Social Ads</li>
-                            <li>Analytics & Reporting</li>
+                            <li data-i18n="content_strategy">Content Strategy</li>
+                            <li data-i18n="community_management">Community Management</li>
+                            <li data-i18n="paid_social_ads">Paid Social Ads</li>
+                            <li data-i18n="analytics_reporting">Analytics & Reporting</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Content Marketing</h3>
-                        <p>Create valuable content that attracts and converts your target audience.</p>
+                        <h3 data-i18n="content_marketing">Content Marketing</h3>
+                        <p data-i18n="content_desc">Create valuable content that attracts and converts your target audience.</p>
                         <ul class="offering-features">
-                            <li>Blog Content</li>
-                            <li>Video Production</li>
-                            <li>Email Newsletters</li>
-                            <li>Content Strategy</li>
+                            <li data-i18n="blog_content">Blog Content</li>
+                            <li data-i18n="video_production">Video Production</li>
+                            <li data-i18n="email_newsletters">Email Newsletters</li>
+                            <li data-i18n="content_strategy">Content Strategy</li>
                         </ul>
                     </div>
                 </div>
@@ -99,117 +107,117 @@
 
             <div id="pricing" class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Pricing</span>
-                    <h2>Marketing Plans</h2>
-                    <p class="content-description">Monthly retainer plans with comprehensive reporting and strategy sessions.</p>
+                    <span class="section-label" data-i18n="pricing">Pricing</span>
+                    <h2 data-i18n="marketing_plans">Marketing Plans</h2>
+                    <p class="content-description" data-i18n="plans_desc">Monthly retainer plans with comprehensive reporting and strategy sessions.</p>
                 </div>
 
                 <div class="pricing-options">
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Startup Plan</h3>
+                            <h3 data-i18n="startup_plan">Startup Plan</h3>
                             <div class="price">$800</div>
-                            <p class="price-period">/month</p>
-                            <p>For new businesses</p>
+                            <p class="price-period">/<span data-i18n="month">month</span></p>
+                            <p data-i18n="new_businesses">For new businesses</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> SEO (5 Keywords)</li>
-                            <li><i class="fas fa-check"></i> Social Media (3 platforms)</li>
-                            <li><i class="fas fa-check"></i> 4 Blog Posts/Month</li>
-                            <li><i class="fas fa-check"></i> Basic Analytics</li>
-                            <li><i class="fas fa-times"></i> PPC Management</li>
-                            <li><i class="fas fa-times"></i> Email Marketing</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="seo_5_keywords">SEO (5 Keywords)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="social_media_3_platforms">Social Media (3 platforms)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="4_blog_posts_month">4 Blog Posts/Month</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="basic_analytics">Basic Analytics</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="ppc_management">PPC Management</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n="email_marketing">Email Marketing</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Start Now</a>
+                        <a href="index.html#contact" class="btn" data-i18n="start_now">Start Now</a>
                     </div>
 
                     <div class="pricing-option featured">
-                        <div class="popular-tag">Most Popular</div>
+                        <div class="popular-tag" data-i18n="most_popular">Most Popular</div>
                         <div class="pricing-header">
-                            <h3>Growth Plan</h3>
+                            <h3 data-i18n="growth_plan">Growth Plan</h3>
                             <div class="price">$1,500</div>
-                            <p class="price-period">/month</p>
-                            <p>For scaling businesses</p>
+                            <p class="price-period">/<span data-i18n="month">month</span></p>
+                            <p data-i18n="scaling_businesses">For scaling businesses</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> SEO (15 Keywords)</li>
-                            <li><i class="fas fa-check"></i> Full Social Media Management</li>
-                            <li><i class="fas fa-check"></i> 8 Blog Posts/Month</li>
-                            <li><i class="fas fa-check"></i> Email Marketing Campaigns</li>
-                            <li><i class="fas fa-check"></i> PPC Management ($500 budget)</li>
-                            <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="seo_15_keywords">SEO (15 Keywords)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="full_social_media_management">Full Social Media Management</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="8_blog_posts_month">8 Blog Posts/Month</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="email_marketing_campaigns">Email Marketing Campaigns</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="ppc_management_500_budget">PPC Management ($500 budget)</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="advanced_analytics">Advanced Analytics</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn btn-filled">Start Growing</a>
+                        <a href="index.html#contact" class="btn btn-filled" data-i18n="start_growing">Start Growing</a>
                     </div>
 
                     <div class="pricing-option">
                         <div class="pricing-header">
-                            <h3>Enterprise Plan</h3>
+                            <h3 data-i18n="enterprise_plan">Enterprise Plan</h3>
                             <div class="price">$3,000</div>
-                            <p class="price-period">/month</p>
-                            <p>For large organizations</p>
+                            <p class="price-period">/<span data-i18n="month">month</span></p>
+                            <p data-i18n="large_organizations">For large organizations</p>
                         </div>
                         <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Comprehensive SEO Strategy</li>
-                            <li><i class="fas fa-check"></i> Multi-channel Marketing</li>
-                            <li><i class="fas fa-check"></i> Content Marketing Strategy</li>
-                            <li><i class="fas fa-check"></i> Advanced PPC Management</li>
-                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
-                            <li><i class="fas fa-check"></i> Custom Reporting Dashboard</li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="comprehensive_seo_strategy">Comprehensive SEO Strategy</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="multi_channel_marketing">Multi-channel Marketing</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="content_marketing_strategy">Content Marketing Strategy</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="advanced_ppc_management">Advanced PPC Management</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="dedicated_account_manager">Dedicated Account Manager</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="custom_reporting_dashboard">Custom Reporting Dashboard</span></li>
                         </ul>
-                        <a href="index.html#contact" class="btn">Contact Sales</a>
+                        <a href="index.html#contact" class="btn" data-i18n="contact_sales">Contact Sales</a>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
                 <div class="content-header">
-                    <span class="section-label">Results</span>
-                    <h2>Case Studies</h2>
+                    <span class="section-label" data-i18n="results">Results</span>
+                    <h2 data-i18n="case_studies">Case Studies</h2>
                 </div>
 
                 <div class="service-offerings">
                     <div class="offering">
-                        <h3>E-commerce Store</h3>
-                        <p>↑ 320% increase in revenue in 6 months through targeted PPC campaigns and SEO optimization.</p>
+                        <h3 data-i18n="ecommerce_store">E-commerce Store</h3>
+                        <p data-i18n="store_revenue">↑ 320% increase in revenue in 6 months through targeted PPC campaigns and SEO optimization.</p>
                         <ul class="offering-features">
-                            <li>PPC Campaign Management</li>
-                            <li>Product Page Optimization</li>
-                            <li>Conversion Rate Optimization</li>
-                            <li>Retargeting Strategy</li>
+                            <li data-i18n="ppc_campaign_management">PPC Campaign Management</li>
+                            <li data-i18n="product_page_optimization">Product Page Optimization</li>
+                            <li data-i18n="conversion_rate_optimization">Conversion Rate Optimization</li>
+                            <li data-i18n="retargeting_strategy">Retargeting Strategy</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>SaaS Company</h3>
-                        <p>↑ 250% increase in qualified leads through content marketing and SEO strategy.</p>
+                        <h3 data-i18n="saas_company">SaaS Company</h3>
+                        <p data-i18n="saas_leads">↑ 250% increase in qualified leads through content marketing and SEO strategy.</p>
                         <ul class="offering-features">
-                            <li>Content Strategy Development</li>
-                            <li>Technical SEO Implementation</li>
-                            <li>Lead Generation Campaigns</li>
-                            <li>Marketing Automation Setup</li>
+                            <li data-i18n="content_strategy_development">Content Strategy Development</li>
+                            <li data-i18n="technical_seo_implementation">Technical SEO Implementation</li>
+                            <li data-i18n="lead_generation_campaigns">Lead Generation Campaigns</li>
+                            <li data-i18n="marketing_automation_setup">Marketing Automation Setup</li>
                         </ul>
                     </div>
 
                     <div class="offering">
-                        <h3>Local Business</h3>
-                        <p>↑ 180% increase in store visits through local SEO and social media marketing.</p>
+                        <h3 data-i18n="local_business">Local Business</h3>
+                        <p data-i18n="local_visits">↑ 180% increase in store visits through local SEO and social media marketing.</p>
                         <ul class="offering-features">
-                            <li>Local SEO Optimization</li>
-                            <li>Google My Business Management</li>
-                            <li>Social Media Community Building</li>
-                            <li>Review Management</li>
+                            <li data-i18n="local_seo_optimization">Local SEO Optimization</li>
+                            <li data-i18n="google_my_business_management">Google My Business Management</li>
+                            <li data-i18n="social_media_community_building">Social Media Community Building</li>
+                            <li data-i18n="review_management">Review Management</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="service-cta">
-                <h2>Grow Your Business</h2>
-                <p>Get a free marketing audit and strategy session.</p>
+                <h2 data-i18n="grow_business">Grow Your Business</h2>
+                <p data-i18n="free_marketing_audit">Get a free marketing audit and strategy session.</p>
                 <div class="cta-buttons">
-                    <a href="index.html#contact" class="btn btn-filled">Get Free Audit</a>
-                    <a href="tel:+11234567890" class="btn">Schedule Call</a>
+                    <a href="index.html#contact" class="btn btn-filled" data-i18n="get_free_audit">Get Free Audit</a>
+                    <a href="tel:+11234567890" class="btn" data-i18n="schedule_call">Schedule Call</a>
                 </div>
             </div>
         </div>
@@ -218,7 +226,7 @@
     <div class="back-navigation">
         <div class="container">
             <a href="index.html#services" class="back-link">
-                <i class="fas fa-arrow-left"></i> Back to All Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="back_to_services">Back to All Services</span>
             </a>
         </div>
     </div>
@@ -228,7 +236,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>ServicePro</h3>
-                    <p>Professional services for modern businesses. Delivering excellence since 2015.</p>
+                    <p data-i18n="servicepro_description">Professional services for modern businesses. Delivering excellence since 2015.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -237,35 +245,36 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="services">Services</h4>
                     <ul>
-                        <li><a href="web-development.html">Web Development</a></li>
-                        <li><a href="graphic-design.html">Graphic Design</a></li>
-                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="app-development.html">App Development</a></li>
+                        <li><a href="web.html" data-i18n="web_development">Web Development</a></li>
+                        <li><a href="graphic-design.html" data-i18n="graphic_design">Graphic Design</a></li>
+                        <li><a href="digital-marketing.html" data-i18n="digital_marketing">Digital Marketing</a></li>
+                        <li><a href="app-development.html" data-i18n="app_development">App Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4 data-i18n="quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="index.html#services" data-i18n="services">Services</a></li>
+                        <li><a href="index.html#testimonials" data-i18n="testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>123 Business St.<br>New York, NY 10001<br>United States</p>
-                    <p>marketing@servicepro.com<br>+1 (212) 555-1234</p>
+                    <h4 data-i18n="contact_footer">Contact</h4>
+                    <p data-i18n="address">123 Business St.<br>New York, NY 10001<br>United States</p>
+                    <p>marketing@servicepro.com<br><span data-i18n="phone_number">+1 (212) 555-1234</span></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ServicePro. All rights reserved.</p>
+                <p>&copy; <span data-i18n="copyright_year">2026</span> ServicePro. <span data-i18n="all_rights_reserved">All rights reserved</span>.</p>
             </div>
         </div>
     </footer>
 
+    <script src="language-manager.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
