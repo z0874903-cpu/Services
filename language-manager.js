@@ -32,9 +32,10 @@ class LanguageManager {
 
     async loadTranslations() {
         try {
+            // FIXED: JSON files are in root, not lang/ folder
             const [enResponse, arResponse] = await Promise.all([
-                fetch('lang/en.json'),
-                fetch('lang/ar.json')
+                fetch('en.json'),
+                fetch('ar.json')
             ]);
             
             if (!enResponse.ok || !arResponse.ok) {
@@ -43,6 +44,10 @@ class LanguageManager {
             
             this.translations.en = await enResponse.json();
             this.translations.ar = await arResponse.json();
+            
+            console.log('Translations loaded successfully');
+            console.log('English keys:', Object.keys(this.translations.en).length);
+            console.log('Arabic keys:', Object.keys(this.translations.ar).length);
             
         } catch (error) {
             console.error('Error loading translations:', error);
@@ -60,6 +65,7 @@ class LanguageManager {
     setLanguage(lang, save = true) {
         if (!this.translations[lang] || lang === this.currentLang) return;
         
+        console.log(`Setting language to: ${lang}`);
         this.currentLang = lang;
         
         if (save) {
@@ -95,13 +101,18 @@ class LanguageManager {
 
     updateTranslations() {
         const langData = this.translations[this.currentLang];
-        if (!langData) return;
+        if (!langData) {
+            console.error(`No translation data for language: ${this.currentLang}`);
+            return;
+        }
 
         // Update text content
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (langData[key]) {
                 el.textContent = langData[key];
+            } else {
+                console.warn(`Missing translation for key: "${key}" in ${this.currentLang}.json`);
             }
         });
 
@@ -121,13 +132,14 @@ class LanguageManager {
             }
         });
 
-        // Update title
-        document.querySelectorAll('[data-i18n-title]').forEach(el => {
-            const key = el.getAttribute('data-i18n-title');
+        // Update page title
+        const titleElements = document.querySelectorAll('[data-i18n-title]');
+        if (titleElements.length > 0) {
+            const key = titleElements[0].getAttribute('data-i18n-title');
             if (langData[key]) {
                 document.title = langData[key];
             }
-        });
+        }
 
         // Update value attributes
         document.querySelectorAll('[data-i18n-value]').forEach(el => {
